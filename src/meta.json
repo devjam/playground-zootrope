@@ -1,7 +1,10 @@
 {
-  "slug": "zootrope",
-  "title": "zootrope",
+  "slug": "zoetrope",
+  "title": "Zootropo",
   "author": "kaminaly",
-  "tags": [],
+  "tags": [
+    "experiment",
+    "animation"
+  ],
   "device": "all"
 }
