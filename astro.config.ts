@@ -1,24 +1,28 @@
-import mdx from '@astrojs/mdx';
-import tailwind from '@astrojs/tailwind';
-import icon from 'astro-icon';
-import { defineConfig } from 'astro/config';
-
-import react from "@astrojs/react";
+import mdx from '@astrojs/mdx'
+import react from '@astrojs/react'
+import tailwind from '@astrojs/tailwind'
+import icon from 'astro-icon'
+import { defineConfig } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://playground.shiftbrain.com/',
-  base: '/post/zootropo',
+  base: '/post/zoetrope',
   server: {
-    open: '/post/zootropo'
+    open: '/post/zoetrope',
   },
   prefetch: true,
-  integrations: [mdx(), tailwind({
-    nesting: true
-  }), icon(), react()],
+  integrations: [
+    mdx(),
+    tailwind({
+      nesting: true,
+    }),
+    icon(),
+    react(),
+  ],
   vite: {
     define: {
-      'import.meta.vitest': 'undefined'
-    }
-  }
-});
+      'import.meta.vitest': 'undefined',
+    },
+  },
+})
