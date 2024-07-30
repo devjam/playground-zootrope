@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect'
 
 type Point = { x: number; y: number }
 
-const Zootrope: React.FC = () => {
+const Zoetrope: React.FC = () => {
   const [{ speed, color, opacity, width, erase }, set] = useControls(() => ({
     'speed preset': buttonGroup({
       '3': () => set({ speed: (Math.PI * 2) / 3 }),
@@ -272,4 +272,4 @@ const Zootrope: React.FC = () => {
   )
 }
 
-export default Zootrope
+export default Zoetrope

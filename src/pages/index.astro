@@ -2,11 +2,11 @@
 import Layout from '../layouts/Layout.astro'
 import { title, slug } from '../meta.json'
 
-import ZootropeComponent from '../components/Zootrope'
+import ZoetropeComponent from '../components/Zoetrope'
 ---
 
 <Layout {title} repoUrl={`https://github.com/devjam/playground-${slug}`}>
   <main>
-    <ZootropeComponent client:load />
+    <ZoetropeComponent client:load />
   </main>
 </Layout>
